@@ -1,0 +1,76 @@
+<html>
+
+<head>
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./main.css" />
+    <link rel="icon" type="image/png" href="./assets/favicon.png" sizes="16x16" />
+    <link rel="manifest" href="manifest.json" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-lg-12 col-sm-12">
+                <h3 class="text-center">Weather App</h3>
+                <form id="cityform">
+                    <div class="form-group">
+                        <label for="city">Enter city</label>
+                        <input id="city" type="text" class="form-control" />
+                        <button type="submit" id="checkbtn" class="btn btn-sm mt-3 float-right btn-info">
+                            Check
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <section class="container" id="resultscontainer">
+        <div class="row">
+            <div class="col-md-12 col-lg-12 col-sm-12">
+                <div class="card mt-3">
+                    <div class="card-header"><p id="cityName"> Results </p></div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table">
+                             <tbody>
+                                 <tr>
+                                     <td>Description</td>
+                                     <td><p id="description"></p></td>
+                                 </tr>
+                                    <tr>
+                                        <td>Country</td>
+                                        <td ><p id="country"></p></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Wind speed</td>
+                                        <td ><p id="wind"></p></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Humidity</td>
+                                        <td ><p id="humidity"></p></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Visibility</td>
+                                        <td><p id="visibility"></p></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+
+ <p id="postsection">
+                            
+</p>
+<p id="wind">
+    
+</p>
+            </div>
+        </div>
+    </section>
+    <script src="./weather.js" type="text/javascript"></script>
+</body>
+
+</html>
